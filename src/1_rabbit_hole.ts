@@ -15,13 +15,12 @@ export function enterTheRabbitHole(name: string) {
 	print(`🥳 Welcome ${name}! 🥳`);
 	print('------------------------');
 	print('You can see a number of holes: ');
-	holes.forEach((h, i) => print(`   ${i} - ${h}`));
+	holes.forEach((h, i) => print(`   ${i} - ${h}`));           
 	askQuestion('Which number hole will you choose?', enterHole);
 }
 
 export function enterHole(hole: string): void {
 	clear(true);
-	console.log("hey")
 
 	//  it might seem like we know this is a number, but of course the user can enter any nonsense to the prompt!
 	const number = parseInt(hole);
