@@ -25,8 +25,4 @@ export function askQuestion(question: string, callback: (arg: string) => void) {
 
 }
 
-export function askQuestion2(question: string ) : any {
-	reader.question(`❓ ${question} 👉 `);
-
-}
 
